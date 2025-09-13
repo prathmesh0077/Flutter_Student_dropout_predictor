@@ -1,0 +1,46 @@
+name: student_tracker_app
+description: A Flutter app for rural school teachers in India to track students and predict potential dropouts.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+  
+  # For local, offline-first database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # For localization (bilingual text)
+  intl: ^0.20.2
+  
+  # For the dashboard pie chart
+  fl_chart: ^0.68.0
+  
+  # For making calls/sending SMS
+  url_launcher: ^6.2.5
+  
+  # For accessing the device's file system to store the Hive database
+  path_provider: ^2.1.2
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code generation tools for Hive
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
